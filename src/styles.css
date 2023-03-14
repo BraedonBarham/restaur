@@ -1,0 +1,69 @@
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body,
+html{
+    height: 100%;
+}
+#content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+#header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(2vw + 5rem);
+    background-image: linear-gradient(blue, darkblue, black);
+}
+#nav-bar{
+    display: flex;
+    gap: 5vw;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.nav-button{
+    padding: 1vw;
+    border-radius: 10%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav-button:hover{
+    color: red;
+}
+.title-class{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2.5rem;
+    display: block;
+}
+#spacing-div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./restaurantPic.jpg');
+}
+.title-class{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+.content-box{
+    display: flex;
+    align-items: center;
+    padding: 2vw;  
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 10vh;
+    width: clamp(100px, 50%, 60vw);
+    background-image: radial-gradient(beige, pink);
+    border-radius: 12%;
+    font-size: clamp(16px, 16px + .5vw, 2rem);
+}
